@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="66ca6ac8-3004-4a6c-a0af-f95b62602f6d" name="Just A Site BagPackBoy" url="http://103.53.43.239">
-        <fileTransfer host="103.53.43.239" port="21">
+        <fileTransfer host="103.53.43.239" port="21" accessType="FTPS">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
           </advancedOptions>
