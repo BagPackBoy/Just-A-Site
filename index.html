@@ -78,8 +78,7 @@
 </p>
 
 <b>---------------------------------------------------</b>
-<p>
-<h2>Headings</h2></p>
+<p><h2>Headings</h2></p>
 
 <h1>Ok im bigger</h1>
 <h2>ahhh im second bigger</h2>
@@ -443,21 +442,40 @@
 
 <b>---------------------------------------------------</b>
 <p>
-<h2>HTML IFRAM</h2></p>
+<h2>HTML IFRAME</h2></p>
 
 <p>An iframe can embedd a webpage, game or it can be your favourite funny cat video from youtube</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <p>By percentage</p>
-<iframe width="50%" height="30%" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="50%" height="30%" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <p>By css Style</p>
-<iframe style="height:300px;width:400px" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe style="height:300px;width:400px" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <p>Remove Border</p>
-<iframe style="height:300px;width:400px" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe style="height:300px;width:400px" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+<b>---------------------------------------------------</b>
+<p>
+<h2>HTML JavaScript</h2></p>
+
+<p>JavaScript Date and Time Generator</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date & Time
+</button>
+
+<p id="demo"></p>
+
+<p>JavaScript can change HTML content</p>
+
+<button type="button" onclick="printAman()">Click me! plxxx</button>
+<p id="demoAman"></p>
 
 <script>
     function hideFunction() {
@@ -470,6 +488,11 @@
 
     function displayResult() {
         document.getElementById("myid").innerHTML = "Hey its changed... kaboooommmm"
+    }
+
+    function printAman() {
+        document.getElementById("demoAman").innerHTML = "Hello Aman!";
+
     }
 </script>
 </body>
