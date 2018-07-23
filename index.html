@@ -2,11 +2,475 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="aman">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        table#alter, #alter2, #alter3, #alter4, #register_form tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#alter tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#alter th {
+            color: white;
+            background-color: gray;
+        }
+
+        table #alter
+    </style>
+    <style>
+        .fruit {
+            background-color: orange;
+            color: white;
+            padding: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        #myid {
+            background-color: #1b1e21;
+            color: #1c7430;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+    <title>My Homepage</title>
 </head>
 <body>
-Hy my name is aman its edited
-lets make more changes
+<p><b>This para is bold.. isnt it?</b></p>
+<p><i>This para is in italic...oooo</i></p>
+<h2>Now we gonna
+    <mark>mark</mark>
+    something. hehe
+</h2>
+<p><u>lets see how underline works</u></p>
+<p>If we want to strike and <strike>kill</strike> some words .. we ahhha acttually can</p>
+<p> this <tt>now this para going to monospaced each character i type .. means equal space between them</tt></p>
+<p>wanna see some text going <sup>Up and up and up</sup></p>
+<p>look at this im going <sub>down down down down</sub></p>
+<p>some texts just ignores me so its better to
+    <del>delete them straight away</del>
+    and strike is different right
+</p>
+<p>lets
+    <del>delete</del>
+    and
+    <ins>insert</ins>
+    something
+</p>
+<p>Hey wanna see a <big>big giant</big></p>
+<p>Eeny meeni
+    <small>miney mooooo</small>
+</p>
 
+<b>---------------------------------------------------</b>
+<p>
+<h2>Headings</h2></p>
+
+<h1>Ok im bigger</h1>
+<h2>ahhh im second bigger</h2>
+<h3>but i look cute</h3>
+<h4>Nahh u dont</h4>
+<h5>im small but not so small</h5>
+<h6>im tiny</h6>
+
+<b>---------------------------------------------------</b>
+<p>
+<h2>HTML Paragraphs</h2></p>
+
+<p>you already know im a paragraph</p>
+<p>and i put space after and before each para</p>
+<p>just to make things clear and concise</p>
+<p>you put lot of spaces but i just
+    ignore them hahah so savage</p>
+
+<b>---------------------------------------------------</b>
+<p>
+<h2>HTML Anchor</h2></p>
+
+<p>Can u click to express your love for <a href="https://www.google.co.in">BagPackBoy</a></p>
+
+<b>---------------------------------------------------</b>
+<p>
+<h2>HTML Image</h2></p>
+
+<h2>Lets embedd an image a good one, a gun my favourite gun with 300x100 dimensions</h2>
+<p><img src="https://wf.cdn.gmru.net/wiki/images/0/0c/Sr34.png" align="center" alt="Sae Scout Sniper" width="300px"
+        height="100"></p>
+
+<b>---------------------------------------------------</b>
+<p>
+<h2>HTML Table</h2></p>
+
+<p>Lets make a table for how many devices i have right now with the border value 2</p>
+
+<table id="alter">
+    <tr>
+        <th>Device Name</th>
+        <th>Company</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Coolpad Note3 Lite</td>
+        <td>Coolpad</td>
+        <td>Rs.7000/-</td>
+    </tr>
+    <tr>
+        <td>Ideapad Z50-70</td>
+        <td>Lenovo</td>
+        <td>Rs.60000/-</td>
+    </tr>
+</table>
+
+<p> Table with 2 colspan</p>
+<table id="alter2">
+    <tr>
+        <th>Name</th>
+        <th colspan="2">Mobile No.</th>
+    </tr>
+    <tr>
+        <td>Aman</td>
+        <td>8743988046</td>
+        <td>7982861606</td>
+    </tr>
+</table>
+
+<p>Table with 2 Rowspan</p>
+<table id="alter3">
+    <tr>
+        <th>Name</th>
+        <td>Aman Gautam</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Mobile no.</th>
+        <td>8743988046</td>
+    </tr>
+    <tr>
+        <td>7982861606</td>
+    </tr>
+</table>
+
+<p>Table with caption</p>
+<table id="alter4">
+    <caption> Aman's Table</caption>
+    <tr>
+        <th>Skills</th>
+        <th>Ratings</th>
+    </tr>
+    <tr>
+        <td>Android</td>
+        <td>7.0</td>
+    </tr>
+    <tr>
+        <td>Java</td>
+        <td>7.0</td>
+    </tr>
+    <tr>
+        <td>Photoshop</td>
+        <td>8.0</td>
+    </tr>
+
+</table>
+
+<b>---------------------------------------------------</b>
+<p>
+<h2>HTML Lists</h2></p>
+
+<p>Ordered List or Numbered List</p>
+
+<ol>
+    <li>Aman</li>
+    <li>Gautam</li>
+    <li>Robin</li>
+    <li>Nonii</li>
+</ol>
+
+<p>Unordered List or Bulleted List</p>
+
+<ul>
+    <li>Aman</li>
+    <li>Gautam</li>
+    <li>Robin</li>
+    <li>Nonii</li>
+</ul>
+
+<p>Description List or Definition List</p>
+
+<dl>
+    <dt>Aman</dt>
+    <dd>First Name</dd>
+    <dt>Gautam</dt>
+    <dd>Last Name or surname</dd>
+    <dt>Robin</dt>
+    <dd>A Nickname by family</dd>
+    <dt>Nonii</dt>
+    <dd>A nickname by my love</dd>
+</dl>
+
+<p>Ordered Lists by various ordering methods</p>
+
+<h3>By Numbers (Default)</h3>
+<ol>
+    <li>Aman</li>
+    <li>Gautam</li>
+    <li>Robin</li>
+    <li>Nonii</li>
+</ol>
+
+<h3>By Roman Number Uppercase</h3>
+<ol type="I">
+    <li>Aman</li>
+    <li>Gautam</li>
+    <li>Robin</li>
+    <li>Nonii</li>
+</ol>
+
+<h3>By Roman Number Lowercase</h3>
+<ol type="i">
+    <li>Aman</li>
+    <li>Gautam</li>
+    <li>Robin</li>
+    <li>Nonii</li>
+</ol>
+
+<h3>By Alphabet Uppercase</h3>
+<ol type="A">
+    <li>Aman</li>
+    <li>Gautam</li>
+    <li>Robin</li>
+    <li>Nonii</li>
+</ol>
+
+<h3>By Alphabet Lowercase</h3>
+<ol type="a">
+    <li>Aman</li>
+    <li>Gautam</li>
+    <li>Robin</li>
+    <li>Nonii</li>
+</ol>
+
+<h3>Start Attribute</h3>
+<ol type="1" start="5">
+    <li> Numeric value 5</li>
+</ol>
+<ol type="A" start="5">
+    <li>Capital Alphabet value E</li>
+</ol>
+<ol type="a" start="5">
+    <li>LowerCase Alphabet value e</li>
+</ol>
+<ol type="I" start="5">
+    <li>Roman Number Capital</li>
+</ol>
+<ol type="i" start="5">
+    <li>Roman Number Lowercase</li>
+</ol>
+
+<p>Unordered List or Bulleted List</p>
+
+<h3>Circle</h3>
+<ul type="circle">
+    <li>Aman</li>
+    <li>Gautam</li>
+    <li>Robin</li>
+    <li>Nonii</li>
+</ul>
+
+<h3>Square</h3>
+<ul type="square">
+    <li>Aman</li>
+    <li>Gautam</li>
+    <li>Robin</li>
+    <li>Nonii</li>
+</ul>
+
+<h3>None</h3>
+<ul type="none">
+    <li>Aman</li>
+    <li>Gautam</li>
+    <li>Robin</li>
+    <li>Nonii</li>
+</ul>
+
+<b>---------------------------------------------------</b>
+<p>
+<h2>HTML Form</h2></p>
+
+<p>TextField Control</p>
+
+<form>
+    Fist Name: <input type="text" name="firstname"> <br/>
+    Last Name: <input type="text" name="lastname"> <br/>
+</form>
+
+<p>Label Tag</p>
+<form>
+    <label for="firstname">First Name: </label>
+    <input type="text" id="firstname" name="firstname"/> <br/>
+    <label for="lastname">Last Name: </label>
+    <input type="text" id="lastname" name="lastname"/> <br/>
+</form>
+
+<p>Password Field Control</p>
+<form>
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password"/> <br/>
+</form>
+
+<p>HTML5 Email Field Control</p>
+<form>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email"/> <br/>
+</form>
+
+<p>Radio Button Control</p>
+
+<form>
+    <label for="gender">Gender: </label>
+    <input type="radio" id="gender_male2" name="gender" value="male"/>Male
+    <input type="radio" id="gender_female2" value="female">Female <br/>
+</form>
+
+<p>Checkbox Control</p>
+<form>
+    Hobby:<br>
+    <label for="cricket">Cricket</label>
+    <input type="checkbox" id="cricket" value="cricket"/>
+    <label for="football">Football</label>
+    <input type="checkbox" id="football" value="football">
+    <label for="hockey">Hockey</label>
+    <input type="checkbox" id="hockey" value="hockey">
+</form>
+
+<p>A full form</p>
+<form action="#">
+    <table id="register_form">
+        <tr>
+            <td><label for="name">Enter Name: </label></td>
+            <td><input type="text" id="name" value="Your Name"/></td>
+        </tr>
+        <tr>
+            <td><label for="password2">Enter Password:</label></td>
+            <td><input type="password" id="password2" value="Your Name"/></td>
+        </tr>
+        <tr>
+            <td><label for="email2">Enter Email:</label></td>
+            <td><input type="email" id="email2" value="Your Email"/></td>
+        </tr>
+
+        <tr>
+            <td><label for="gender">Enter Gender:</label></td>
+            <td><input type="radio" id="gender_male" name="male" value="male"/>
+                <label for="gender_male">Male</label>
+                <input type="radio" id="gender_female" name="female" value="female"/>
+                <label for="gender_female">Female</label></td>
+        </tr>
+
+        <tr>
+            <td><label for="country">Select Country:</label></td>
+            <td>
+                <select id="country" name="country" style="width: 160px">
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="China">China</option>
+
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div align="right">
+                    <input type="button" name="register" id="register_user" value="register"/></div>
+            </td>
+
+        </tr>
+    </table>
+</form>
+
+<b>---------------------------------------------------</b>
+<p>
+<h2>HTML Classes</h2></p>
+
+<p>Using fruit class to inherit its style</p>
+
+<h2 class="fruit"> Mango </h2>
+<p>Mango is king of all fruits.</p>
+
+<h2 class="fruit"> Orange </h2>
+<p>Oranges are full of Vitamin C.</p>
+
+<h2 class="fruit"> Apple </h2>
+<p>An apple a day, keeps the doctor away.</p>
+
+<p>Hide them with simple JavaScript Function linked with Fruit class</p>
+
+<button onclick="hideFunction()">Hide the all</button>
+
+<p>Multiple Class</p>
+
+<h2 class="fruit"> Thats a fruit</h2>
+<h2 class="center">Thats a fruit in center</h2>
+
+<p>Same Class with different tags</p>
+
+<h2 class="fruit">Fruit with h2 tag</h2>
+<p class="fruit">Fruit with p tag a long para to read</p>
+
+<b>---------------------------------------------------</b>
+<p>
+<h2>HTML IDs</h2></p>
+
+<p id="myid">This text contains #myid ID thats why it looks like this.</p>
+
+<p>Now lets use a JavaScript function on this ID ahmm click the button below.</p>
+
+<button onclick="displayResult()">Change text</button>
+
+<b>---------------------------------------------------</b>
+<p>
+<h2>HTML IFRAM</h2></p>
+
+<p>An iframe can embedd a webpage, game or it can be your favourite funny cat video from youtube</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>By percentage</p>
+<iframe width="50%" height="30%" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>By css Style</p>
+<iframe style="height:300px;width:400px" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Remove Border</p>
+<iframe style="height:300px;width:400px" src="https://www.youtube.com/embed/Of5yRFhgNOE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+<script>
+    function hideFunction() {
+        var x = document.getElementsByClassName("fruit");
+        for (var i = 0; i < x.length; i++) {
+
+            x[i].style.display = "none";
+        }
+    }
+
+    function displayResult() {
+        document.getElementById("myid").innerHTML = "Hey its changed... kaboooommmm"
+    }
+</script>
 </body>
 </html>
