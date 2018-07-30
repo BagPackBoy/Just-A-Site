@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .flex-container {
             display: -webkit-flex;
@@ -20,22 +21,49 @@
             text-align: left;
         }
 
-        header {background: #000080;color:white;}
-        footer {background: #000080;color:white;}
-        .nav {background:#eee;}
+        header {
+            background: #000080;
+            color: white;
+        }
+
+        footer {
+            background: #000080;
+            color: white;
+        }
+
+        .nav {
+            background: #eee;
+        }
 
         .nav ul {
             list-style-type: none;
             padding: 0;
         }
+
         .nav ul a {
             text-decoration: none;
         }
 
         @media all and (min-width: 768px) {
-            .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
-            .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
-            footer {-webkit-order:3;order:3;}
+            .nav {
+                text-align: left;
+                -webkit-flex: 1 auto;
+                flex: 1 auto;
+                -webkit-order: 1;
+                order: 1;
+            }
+
+            .article {
+                -webkit-flex: 5 0px;
+                flex: 5 0px;
+                -webkit-order: 2;
+                order: 2;
+            }
+
+            footer {
+                -webkit-order: 3;
+                order: 3;
+            }
         }
     </style>
 </head>
@@ -58,7 +86,23 @@
         <h1>HTML</h1>
         <p>HTML tutorial or HTML 5 tutorial provides basic and advanced concepts of html. Our HTML tutorial is
             developed for beginners and professionals.</p>
-        <p>TML is an acronym which stands for Hyper Text Markup Language. Let's see what is Hyper Text and what is Markup Language?</p>
+        <h1 style="font-size:10vw;">Here size is 10vw.</h1>
+        <p style="font-size:6vw;">Here size is 6vw.</p>
+        <p style="font-size:4vw;">Here size is 4vw.</p>
+        <p>Resize the browser window to see how the text size changes.</p>
+        <img src="../static/images/banners/bf4.jpg" width="100%"/>
+        <img src="../static/images/banners/bf4.jpg" style = "max-width:100%;height: auto;"/>
+
+        <h2>Change Images Depending on Browser Width</h2>
+        <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+        <picture>
+            <source srcset="https://images-na.ssl-images-amazon.com/images/I/81J9G1LC%2BQL._SL1500_.jpg" media="(max-width: 600px)">
+            <source srcset="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" media="(max-width: 1500px)">
+            <source srcset="flowers.jpg">
+            <img src="https://i.pinimg.com/originals/25/f8/da/25f8da5300747f8f149632f0a1261561.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+        <p>TML is an acronym which stands for Hyper Text Markup Language. Let's see what is Hyper Text and what is
+            Markup Language?</p>
         <p><strong>Resize this page to see what happens!</strong></p>
     </article>
 
