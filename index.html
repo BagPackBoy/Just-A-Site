@@ -49,7 +49,7 @@
 </head>
 <body>
 
-<h1>Tap here to <a href="/registration/register.php">register</a></h1>
+<h1>Tap here to <a href="registration/register.php">register</a></h1>
 
 <p><b>This para is bold.. isnt it?</b></p>
 
@@ -400,7 +400,8 @@
 
 <p>Radio Button Control</p>
 
-<form id="gender_form"><label for="gender_form">Gender: </label> <input id="gender_male2" name="gender" type="radio" value="male"/>Male <input
+<form id="gender_form"><label for="gender_form">Gender: </label> <input id="gender_male2" name="gender" type="radio"
+                                                                        value="male"/>Male <input
         id="gender_female2" type="radio" value="female"/>Female
 </form>
 
@@ -431,7 +432,7 @@
             <td><input id="email2" type="email" value="Your Email"/></td>
         </tr>
         <tr>
-            <td><label for="gender">Enter Gender:</label></td>
+            <td><label for="gender_male">Enter Gender:</label></td>
             <td><input id="gender_male" name="male" type="radio" value="male"/> <label for="gender_male">Male</label>
                 <input id="gender_female" name="female" type="radio" value="female"/> <label
                         for="gender_female">Female</label></td>
@@ -567,15 +568,54 @@
 </p>
 
 <p id="demoAman"></p>
+
+<p>JavaScript can change HTML Style</p>
+
+<p id="jsStyleChange">Now this weak boi will do something with JS oooo</p>
+<button type="button" onclick="changeHTMLStyle()">Click me to change weak boii</button>
+
+<p>JavaScript can change HTML Attributes</p>
 <script>
-    <!-- Hide Function -->
+    function light(sw) {
+        var pic;
+        if (sw === 0) {
+            pic = "https://cdn.pixabay.com/photo/2014/03/25/15/22/power-296626_960_720.png"
+            document.getElementById('myImage').src = pic;
+        }
+        else {
+            pic = "https://cdn3.iconfinder.com/data/icons/buttons/512/Icon_10-512.png"
+            document.getElementById('myImage').src = pic;
+        }
+    }
+</script>
+<img id="myImage" src="https://cdn3.iconfinder.com/data/icons/buttons/512/Icon_10-512.png" width="100" height="100">
+<p>
+    <button type="button" onclick="light(1)">Light On</button>
+    <button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<p>JavaScript with noscript tag which wont render</p>
+
+<p id="invisible_londa">No body can dare to touch me specially the noscipt tags huh</p>
+<script>
+    document.getElementById('invisible_londa').innerHTML = "hey you change your text";
+</script>
+<noscript>
+    This wont be redering cause its in noscript tag
+</noscript>
+
+
+<!-- Scripting Starts from here -->
+<script>
+
     function hideFunction() {
         var x = document.getElementsByClassName("fruit");
-        for (var i = 0; i < x.length; i++) {
+        for (let i = 0; i < x.length; i++) {
 
             x[i].style.display = "none";
         }
     }
+
     <!-- Display Results-->
     function displayResult() {
         document.getElementById("myid").innerHTML = "Hey its changed... kaboooommmm"
@@ -584,6 +624,12 @@
     function printAman() {
         document.getElementById("demoAman").innerHTML = "Hello Aman!";
 
+    }
+
+    function changeHTMLStyle() {
+        document.getElementById("jsStyleChange").style.fontSize = "25px";
+        document.getElementById("jsStyleChange").style.color = "brown";
+        document.getElementById("jsStyleChange").style.backgroundColor = "lightgreen";
     }
 </script>
 </body>
