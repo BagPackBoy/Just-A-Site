@@ -48,7 +48,7 @@
     <title>Im Back</title>
 </head>
 <body>
-<a href="HTML5/index.html"> Click for HTML5 Page</a>
+<a href="HTML5/example.html"> Click for HTML5 Page</a>
 
 <h1>Tap here to <a href="registration/register.php">register</a></h1>
 
@@ -482,6 +482,9 @@
 <p>
     <button onclick="hideFunction()">Hide the all</button>
 </p>
+<p>
+    <button onclick="showFunction()">Show them all</button>
+</p>
 
 <p>Multiple Class</p>
 
@@ -647,6 +650,64 @@
     </marquee>
 </marquee>
 
+<b>---------------------------HTML Textarea------------------------</b></p>
+<textarea rows="9" cols="70">
+JavaTpoint textarea tag example with rows and columns.
+</textarea>
+
+<form action="updates.jsp" id="usrform">
+    Name: <input type="text" name="usrname">
+    <input type="submit">
+</form>
+<br>
+<textarea rows="9" cols="70" name="comment" form="usrform">
+Enter text here...</textarea>
+<p>The text area above is outside the form element, but should still be a part of the form.</p>
+<p><b>Note:</b> The form attribute is not supported in Internet Explorer.</p>
+
+<b>---------------------------HTML Quotes------------------------</b></p>
+
+<p>HTML q tag</p>
+<p> Dr. Seuss once said : <q>Reality is finally better than your dreams.</q></p>
+<p>HTML blockquote tag</p>
+
+<blockquote>
+    According to scientists, the bumblebee's body is too heavy and its wing span too
+    small. Aerodynamically, the bumblebee cannot fly. But the bumblebee doesn't know that and it
+    keeps flying. When you don't know your limitations, you go out and surprise yourself. In hindsight, you
+    wonder if you had any limitations. The only limitations a person has are those that are self-
+    imposed. Don't let education put limitations on you
+</blockquote>
+
+<p>HTML abbr tag</p>
+<abbr>
+    In hindsight, you
+    wonder if you had any limitations. The only limitations a person has are those that are self-
+    imposed. Don't let education put limitations on you
+</abbr>
+
+<p>HTML address tag</p>
+<address>
+    Aman Gautam, Delhi, India - 110091
+</address>
+
+<p>HTML bdo tag</p>
+<bdo>
+    Direction of the text
+</bdo>
+
+<p>HTML cite tag</p>
+<bdo>
+    A cite A cite A cite A cite A cite A cite A cite A cite A cite A cite A cite A cite A cite A cite A cite A cite A
+    cite
+</bdo>
+
+<p>HTML define tag</p>
+<define>
+    Define Define Define Define Define Define Define Define Define Define Define Define Define Define Define Define
+    Define Define Define Define Define Define Define Define
+</define>
+
 
 <!-- Scripting Starts from here -->
 <script>
@@ -658,6 +719,15 @@
             x[i].style.display = "none";
         }
     }
+
+    function showFunction() {
+        var x = document.getElementsByClassName("fruit");
+        for (let i = 0; i < x.length; i++) {
+
+            x[i].style.display = "inherit";
+        }
+    }
+
 
     <!-- Display Results-->
     function displayResult() {
